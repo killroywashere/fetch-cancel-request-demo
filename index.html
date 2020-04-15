@@ -1,0 +1,60 @@
+<!--Author: Kishin Karra
+github: https://github.com/killroywashere
+-->
+
+<script src="/scripts.js"></script>
+<div class="main">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            background-color: #b1b1b1;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .download-button,
+        .cancel-button {
+            background: #1b1b1b;
+            border: none;
+            border-radius: 10px;
+            width: 300px;
+            height: 100px;
+            color: #b1b1b1;
+            display: block;
+            margin: 10px;
+            cursor: pointer;
+            font-size: larger;
+            outline: none;
+        }
+
+        .cancel-button {
+            display: none;
+        }
+
+        .title {
+            color: #1b1b1b;
+        }
+
+        .description {
+            color: #1b1b1b;
+        }
+    </style>
+    <div class="title">
+        <h1>Fetch request API Demo</h1>
+    </div>
+    <div class="description">
+        <h3>Open network and observe actions after start and cancel button click</h3>
+    </div>
+    <button class="download-button" id="startBtn" onclick="startClicked()">Start Download</button>
+    <button class="cancel-button" id="cancelBtn" onclick="cancelClicked()"> Cancel Download</button>
+    <div id="error">
+    </div>
+</div>
