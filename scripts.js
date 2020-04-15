@@ -24,6 +24,7 @@ getBigFile = () => {
 
 startClicked = () => {
     abortController = getBigFile();
+    document.getElementById('error').innerHTML = '';
     document.getElementById('startBtn').style.display = 'none';
     document.getElementById('cancelBtn').style.display = 'block';
 }
